@@ -12,7 +12,13 @@ DATABASES = {
     }
 }
 STATIC_ROOT = os.path.join(BASE_DIR, '../statics')
-
+REST_FRAMEWORK = {
+    # Use Django's standard django.contrib.auth permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+    ],
+    'PAGE_SIZE': 10
+}
 # channels settings
 CHANNEL_LAYERS = {
     "default": {

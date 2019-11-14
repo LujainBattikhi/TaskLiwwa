@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
-
 # 3rd party
 INSTALLED_APPS += [
     "main",
@@ -52,6 +51,8 @@ INSTALLED_APPS += [
     'allauth.socialaccount',
     # 'allauth.socialaccount.providers.facebook',
     'anymail',
+
+    'rest_framework',
 ]
 
 # Django debug toolbar settings

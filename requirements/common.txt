@@ -11,3 +11,4 @@ django-npm==1.0.0
 django-parsley==0.7
 kombu==4.3.0
 redis==3.2.0
+djangorestframework
