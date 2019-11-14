@@ -12,7 +12,7 @@ def replace_djang_base(path, project_name):
         try:
             if dirname not in [".sass-cache", "bower_components", "node_modules", ".git", "db.sqlite3", "migrations"]:
                 if isfile(join(path, dirname)):
-                    replace(join(path, dirname), "django_starterkit", project_name)
+                    replace(join(path, dirname), "lujain-system", project_name)
                 else:
                     replace_djang_base(join(path, dirname), project_name)
         except:
@@ -36,6 +36,6 @@ def replace(file_path, pattern, subst):
 project_name = input("Enter project name (default:nameless): ") or "nameless"
 project_path = os.path.dirname(os.path.abspath(__file__))
 # rename(join(project_path, "docker-build"), join(project_path, project_name + "-docker-build"))
-rename(join(project_path, "django_starterkit"), join(project_path, project_name))
+rename(join(project_path, "lujain-system"), join(project_path, project_name))
 replace_djang_base(project_path, project_name)
 call(["rm", os.path.abspath(__file__)])

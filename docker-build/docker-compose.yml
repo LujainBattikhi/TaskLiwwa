@@ -33,9 +33,9 @@ services:
   celery-beat:
     extends:
       service: common_server
-    command: celery -A django_starterkit beat -l info
+    command: celery -A lujain-system beat -l info
 
   celery-worker:
     extends:
       service: common_server
-    command: celery -A django_starterkit worker -l info
+    command: celery -A lujain-system worker -l info
