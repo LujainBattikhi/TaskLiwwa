@@ -8,8 +8,8 @@ A simple Django starter-kit with the basic component.
 ## Getting Started
 1. Dlone/Download the repo:
 `git clone --depth 1 https://github.com/LujainBattikhi/TaskPOSRocket`
-2. navigate to django-starterkit => docker-build
-`cd django-starterkit/docker-build/`
+2. navigate to lujain-system => docker-build
+`cd lujain-system/docker-build/`
 3. build docker containers
 `docker-compose build`
 4. Launch containers:
